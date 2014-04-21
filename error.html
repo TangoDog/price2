@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="en" />
+
+	<!-- blueprint CSS framework -->
+	<link rel="stylesheet" type="text/css" href="/pvg/css/screen.css" media="screen, projection" />
+	<link rel="stylesheet" type="text/css" href="/pvg/css/print.css" media="print" />
+	<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="/pvg/css/ie.css" media="screen, projection" />
+	<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="/pvg/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="/pvg/css/form.css" />
+
+	<title>FullMonte/PriceVision Group - Error</title>
+</head>
+
+<body>
+
+<div class="container" id="page">
+
+	<div id="header">
+		<div id="logo">FullMonte/PriceVision Group</div>
+	</div><!-- header -->
+
+	<div id="mainmenu">
+		<ul id="yw0">
+<li><a href="/pvg/index.php/site/index">Home</a></li>
+<li><a href="/pvg/index.php/site/page?view=about">About</a></li>
+<li><a href="/pvg/index.php/site/contact">Contact</a></li>
+<li><a href="/pvg/index.php/site/login">Login</a></li>
+</ul>	</div><!-- mainmenu -->
+			<div class="breadcrumbs">
+<a href="/pvg/index.php">Home</a> &raquo; <span>Error</span></div><!-- breadcrumbs -->
+	
+	<div id="content">
+	
+<h2>Error 500</h2>
+
+<div class="error">
+Could not upload file</div></div><!-- content -->
+
+	<div class="clear"></div>
+
+	<div id="footer">
+		Copyright &copy; 2014 by My Company.<br/>
+		All Rights Reserved.<br/>
+		Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a>.	</div><!-- footer -->
+
+</div><!-- page -->
+
+</body>
+</html>
+<!-- start log messages -->
+<table class="yiiLog" width="100%" cellpadding="2" style="border-spacing:1px;font:11px Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;color:#666666;">
+	<tr>
+		<th style="background:black;color:white;" colspan="5">
+			Application Log
+		</th>
+	</tr>
+	<tr style="background-color: #ccc;">
+	    <th style="width:120px">Timestamp</th>
+		<th>Level</th>
+		<th>Category</th>
+		<th>Message</th>
+	</tr>
+	<tr style="background:#FFFFFF">
+		<td align="center">20:55:36.435982</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading &quot;log&quot; application component
+in /var/www/pvg/index.php (13)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">20:55:36.436245</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading &quot;request&quot; application component
+in /var/www/pvg/index.php (13)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">20:55:36.436342</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading &quot;urlManager&quot; application component
+in /var/www/pvg/index.php (13)</pre></td>
+	</tr>	<tr style="background:#FFC0CB">
+		<td align="center">20:55:36.628878</td>
+		<td>error</td>
+		<td>exception.CHttpException.500</td>
+		<td><pre>exception &#039;CHttpException&#039; with message &#039;Could not upload file&#039; in
+/var/www/pvg/protected/extensions/xupload-0.5.1/actions/XUploadAction.php:281
+Stack trace:
+#0
+/var/www/pvg/protected/extensions/xupload-0.5.1/actions/XUploadAction.php(191):
+XUploadAction-&gt;handleUploading()
+#1 /var/framework/web/actions/CAction.php(76): XUploadAction-&gt;run()
+#2 /var/framework/web/CController.php(308): CAction-&gt;runWithParams(Array)
+#3 /var/framework/web/CController.php(286):
+CController-&gt;runAction(Object(XUploadAction))
+#4 /var/framework/web/CController.php(265):
+CController-&gt;runActionWithFilters(Object(XUploadAction), Array)
+#5 /var/framework/web/CWebApplication.php(282): CController-&gt;run(&#039;upload&#039;)
+#6 /var/framework/web/CWebApplication.php(141):
+CWebApplication-&gt;runController(&#039;site/upload&#039;)
+#7 /var/framework/base/CApplication.php(180):
+CWebApplication-&gt;processRequest()
+#8 /var/www/pvg/index.php(13): CApplication-&gt;run()
+#9 {main}
+REQUEST_URI=/pvg/index.php/site/upload
+---</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">20:55:36.628942</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading &quot;errorHandler&quot; application component</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">20:55:36.685070</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading &quot;widgetFactory&quot; application component
+in /var/www/pvg/protected/views/layouts/column1.php (2)
+in /var/www/pvg/protected/controllers/SiteController.php (50)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">20:55:36.716994</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading &quot;user&quot; application component
+in /var/www/pvg/protected/views/layouts/main.php (35)
+in /var/www/pvg/protected/views/layouts/column1.php (6)
+in /var/www/pvg/protected/controllers/SiteController.php (50)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">20:55:36.717477</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading &quot;session&quot; application component
+in /var/www/pvg/protected/views/layouts/main.php (35)
+in /var/www/pvg/protected/views/layouts/column1.php (6)
+in /var/www/pvg/protected/controllers/SiteController.php (50)</pre></td>
+	</tr>	<tr style="background:#FFFFFF">
+		<td align="center">20:55:36.772393</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading &quot;coreMessages&quot; application component
+in /var/www/pvg/protected/views/layouts/main.php (43)
+in /var/www/pvg/protected/views/layouts/column1.php (6)
+in /var/www/pvg/protected/controllers/SiteController.php (50)</pre></td>
+	</tr>	<tr style="background:#F5F5F5">
+		<td align="center">20:55:36.772658</td>
+		<td>trace</td>
+		<td>system.CModule</td>
+		<td><pre>Loading &quot;clientScript&quot; application component
+in /var/www/pvg/protected/controllers/SiteController.php (50)</pre></td>
+	</tr></table>
+<!-- end of log messages -->
